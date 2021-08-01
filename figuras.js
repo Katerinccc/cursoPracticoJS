@@ -1,23 +1,48 @@
 //square 
 
-const squareSide = 5;
-console.log("The square sides measure: " + squareSide + "cm");
+console.group("Cuadrado");
 
-const squarePerimeter = squareSide * 4;
-console.log("The perimeter of the square measures: " + squarePerimeter + "cm");
+function squarePerimeter(squareSide){
+    return squareSide * 4;
+} 
+squarePerimeter();
+// console.log("El perimero del cuadrado mide: " + squarePerimeter + "cm");
 
-const squareArea = squareSide * squareSide;
-console.log("The area of the square measures: " + squareArea + "cm^2");
+function squareArea(squareSide){
+    return Math.pow(squareSide, 2);
+}
+squareArea();
+// console.log("El área del cuadrado mide: " + squareArea + "cm^2");
+console.groupEnd();
 
 //triangle
 
-const triangleSide = 5;
-console.log("The square sides measure: " + squareSide + "cm");
+console.group("triángulo");
 
-const trianglePerimeter = squareSide * 4;
-console.log("The perimeter of the square measures: " + squarePerimeter + "cm");
+function trianglePerimeter(triangleSide1, triangleSide2, triangleBase){
+    return triangleSide1 + triangleSide2 + triangleBase;
+} 
+trianglePerimeter();
+// console.log("El perimetro del triángulo mide: " + trianglePerimeter + "cm");
 
-const triangleArea = squareSide * squareSide;
-console.log("The area of the square measures: " + squareArea + "cm^2");
+function triangleArea{
+    return (triangleBase * triangleHeight) / 2
+}
+triangleArea();
+
+// console.log("El área del triángulo mide: " + triangleArea + "cm^2");
+console.groupEnd();
 
 //circle
+
+console.group("círculo");
+const circleRadius = 4;
+const circleDiameter = circleRadius *2;
+const PI = Math.PI;
+const circlePerimeter = (circleDiameter * PI).toFixed(2);
+const circleArea = (Math.pow((circleRadius), 2) * PI).toFixed(2);
+
+console.log("El radio del círculo mide: " + circleRadius + "cm");
+console.log("El perimetro del círculo mide: " + circlePerimeter + "cm");
+console.log("El área del círculo mide: " + circleArea + "cm^2");
+console.groupEnd();
