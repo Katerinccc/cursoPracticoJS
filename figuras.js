@@ -25,24 +25,28 @@ function trianglePerimeter(triangleSide1, triangleSide2, triangleBase){
 trianglePerimeter();
 // console.log("El perimetro del triángulo mide: " + trianglePerimeter + "cm");
 
-function triangleArea{
+function triangleArea(triangleBase, triangleHeight){
     return (triangleBase * triangleHeight) / 2
 }
 triangleArea();
-
-// console.log("El área del triángulo mide: " + triangleArea + "cm^2");
 console.groupEnd();
 
 //circle
 
-console.group("círculo");
-const circleRadius = 4;
-const circleDiameter = circleRadius *2;
 const PI = Math.PI;
-const circlePerimeter = (circleDiameter * PI).toFixed(2);
-const circleArea = (Math.pow((circleRadius), 2) * PI).toFixed(2);
+function circleDiameter(circleRadius){
+    return circleRadius *2;
+}
+circleDiameter();
 
-console.log("El radio del círculo mide: " + circleRadius + "cm");
-console.log("El perimetro del círculo mide: " + circlePerimeter + "cm");
-console.log("El área del círculo mide: " + circleArea + "cm^2");
+function circlePerimeter(circleRadius){
+    const diameter = circleDiameter(circleRadius);
+    return (diameter * PI).toFixed(2);
+}
+circlePerimeter();
+
+function circleArea(circleRadius){
+    (Math.pow((circleRadius), 2) * PI).toFixed(2)
+}
+circleArea();
 console.groupEnd();
