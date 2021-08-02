@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="./figuras.js"></script>
     <header>
         <img src="./assets/logo.png" alt="logo-html-css-javascript">
         <h1>Talleres del curso Práctico de Javascript by Platzi</h1>
@@ -18,17 +19,47 @@
     <main>
         <section class="workshop1">
             <h2>Taller1 - Figuras Geométricas</h2>
-            <h3>Cuadrado</h3>
-            <section>
-                <form action="">
-                    <label for="">
+            <section class="square">
+                <h3>Cuadrado</h3>
+                <form class="square__form">
+                    <label for="squareInput">
                         Digita cuánto mide cada lado de tu cuadrado:
                     </label>
-                    <input type="number"/>
-                    <button>
-                        Calcular Perimetro
+                    <input id="squareInput" type="number"/>
+                    <button type="button" onclick="squarePerimeterCalculate()">
+                        Calcular Perímetro
                     </button>
-                    <button>
+                    <button type="button" onclick="squareAreaCalculate()">
+                        Calcular Área
+                    </button>
+                </form>
+            </section>
+            <section class="square">
+                <h3>Triángulo</h3>
+                <form class="square__form">
+                    <label for="squareInput">
+                        Digita cuánto miden los lados y base de tu Triángulo:
+                    </label>
+                    <input id="triangleInput" type="number"/>
+                    <button type="button" onclick="squarePerimeterCalculate()">
+                        Calcular Perímetro
+                    </button>
+                    <button type="button" onclick="squareAreaCalculate()">
+                        Calcular Área
+                    </button>
+                </form>
+            </section>
+            <section class="square">
+                <h3>Círculo</h3>
+                <form class="square__form">
+                    <label for="squareInput">
+                        Digita cuánto mide el radio de tu Círculo:
+                    </label>
+                    <input id="circleInput" type="number"/>
+                    <button type="button" onclick="squarePerimeterCalculate()">
+                        Calcular Perímetro
+                    </button>
+                    <button type="button" onclick="squareAreaCalculate()">
                         Calcular Área
                     </button>
                 </form>
