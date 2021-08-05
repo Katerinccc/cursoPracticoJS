@@ -44,7 +44,7 @@ header img{
     padding-right: 10px;
 }
 
-.workshop1{
+.workshop1 , .workshop2{
     color: var(--purple);
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ header img{
     margin: 10px;
 }
 
-.workshop1 h2{
+.workshop1 h2 , .workshop2 h2{
     align-self: center;
     padding-bottom: 10px;
     font-size: 1.6rem;
