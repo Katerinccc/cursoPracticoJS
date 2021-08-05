@@ -44,16 +44,18 @@
                         <label for="triangleInput1">Lado 1</label>
                         <label for="triangleInput2">Lado 2</label>
                         <label for="triangleInputBase">Base</label>
+                        <label for="triangleInputHeight">Altura</label>
                     </div>
                     <div class="input-triangle">
                         <input id="triangleInput1" type="number"/>
                         <input id="triangleInput2" type="number"/>
                         <input id="triangleInputBase" type="number"/>
+                        <input id="triangleInputHeight" type="number"/>
                     </div>
-                    <button type="button" onclick="squarePerimeterCalculate()">
+                    <button type="button" onclick="trianglePerimeterCalculate()">
                         Calcular Perímetro
                     </button>
-                    <button type="button" onclick="squareAreaCalculate()">
+                    <button type="button" onclick="triangleAreaCalculate()">
                         Calcular Área
                     </button>
                 </form>
@@ -61,14 +63,14 @@
             <section class="figures">
                 <h3>Círculo</h3>
                 <form class="figures__form">
-                    <label for="squareInput">
+                    <label for="circleInput">
                         Digita cuánto mide el radio de tu Círculo:
                     </label>
                     <input id="circleInput" type="number"/>
-                    <button type="button" onclick="squarePerimeterCalculate()">
+                    <button type="button" onclick="circlePerimeterCalculate()">
                         Calcular Perímetro
                     </button>
-                    <button type="button" onclick="squareAreaCalculate()">
+                    <button type="button" onclick="circleAreaCalculate()">
                         Calcular Área
                     </button>
                 </form>

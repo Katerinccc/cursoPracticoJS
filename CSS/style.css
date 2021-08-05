@@ -102,7 +102,7 @@ header img{
     border: 1px solid var(--blue);
     text-align: center;
     color: var(--blue);
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .input-triangle{
@@ -111,7 +111,7 @@ header img{
 }
 
 .label-triangle{
-    width: 210px;
+    width: 240px;
     margin-top: 5px;
     font-weight: 700;
     display: flex;
@@ -123,8 +123,8 @@ header img{
 }
 
 .input-triangle input{
-    width: 70px;
-    margin-right: 2px;
+    width: 60px;
+    margin-right: 3px;
 }
 
 
