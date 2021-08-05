@@ -19,9 +19,9 @@
     <main>
         <section class="workshop1">
             <h2>Taller1 - Figuras Geométricas</h2>
-            <section class="square">
+            <section class="figures">
                 <h3>Cuadrado</h3>
-                <form class="square__form">
+                <form class="figures__form">
                     <label for="squareInput">
                         Digita cuánto mide cada lado de tu cuadrado:
                     </label>
@@ -34,13 +34,22 @@
                     </button>
                 </form>
             </section>
-            <section class="square">
+            <section class="figures">
                 <h3>Triángulo</h3>
-                <form class="square__form">
-                    <label for="squareInput">
+                <form class="figures__form">
+                    <label>
                         Digita cuánto miden los lados y base de tu Triángulo:
                     </label>
-                    <input id="triangleInput" type="number"/>
+                    <div class="label-triangle">
+                        <label for="triangleInput1">Lado 1</label>
+                        <label for="triangleInput2">Lado 2</label>
+                        <label for="triangleInputBase">Base</label>
+                    </div>
+                    <div class="input-triangle">
+                        <input id="triangleInput1" type="number"/>
+                        <input id="triangleInput2" type="number"/>
+                        <input id="triangleInputBase" type="number"/>
+                    </div>
                     <button type="button" onclick="squarePerimeterCalculate()">
                         Calcular Perímetro
                     </button>
@@ -49,9 +58,9 @@
                     </button>
                 </form>
             </section>
-            <section class="square">
+            <section class="figures">
                 <h3>Círculo</h3>
-                <form class="square__form">
+                <form class="figures__form">
                     <label for="squareInput">
                         Digita cuánto mide el radio de tu Círculo:
                     </label>
