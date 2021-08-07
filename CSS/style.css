@@ -59,7 +59,7 @@ header img{
     font-size: 1.6rem;
 }
 
-.figures{
+.figures , .discount{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -84,7 +84,7 @@ header img{
     font-weight: 800;
 }
 
-.figures__form button{
+.figures__form button , .discount__form button{
     font-size: 1rem;
     width: 130px;
     background-color: var(--soft-purple);
@@ -94,7 +94,7 @@ header img{
     margin-bottom: 2px;
 }
 
-.figures__form input{
+.figures__form input , .discount__form input{
     font-size: 1.2rem;
     width: 150px;
     margin: 5px 0 5px 0px;
@@ -127,7 +127,43 @@ header img{
     margin-right: 3px;
 }
 
+.discount__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+}
 
+.discount h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+    align-self: center;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+.discount__form p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.discount__form label{
+    color: var(--soft-purple);
+}
+
+.discount__form--coupon{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.discount__form--coupon select{
+    margin-left: 5px;
+    font-size: 1.1rem;
+    border-color: var(--blue);
+    color: var(--blue);
+}
 
 
 

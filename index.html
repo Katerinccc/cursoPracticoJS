@@ -19,7 +19,7 @@
     </header>
     <main>
         <section class="workshop1">
-            <h2>Taller1 - Figuras Geométricas</h2>
+            <h2>Taller 1 - Figuras Geométricas</h2>
             <section class="figures">
                 <h3>Cuadrado</h3>
                 <form class="figures__form">
@@ -78,14 +78,23 @@
             </section>
         </section>
         <section class="workshop2">
-            <h2>Taller - Porcentajes y descuentos</h2>
-            <section>
+            <h2>Taller 2 - Porcentajes y descuentos</h2>
+            <section class="discount">
                 <h3>Calcula el precio de tus productos con descuento</h3>
                 <form class="discount__form">
-                    <label for="price">Escribe el precio de tu producto</label>
-                    <label for="discount">Escribe el descuento de tu producto</label>
+                    <label for="price">Escribe el precio de tu producto:</label>
                     <input id="inputPrice" type="number">
+                    <label for="discount">Escribe el descuento de tu producto:</label>
                     <input id="inputDiscount" type="number">
+                    <div class="discount__form--coupon">
+                        <label for="inputCoupon">Cupones:</label>
+                        <select name="couponsDiscount" id="inputCoupon">
+                            <option value="0" ></option>
+                            <option value="1" >Platzi</option>
+                            <option value="2" >Learn</option>
+                            <option value="3" >Growth</option>
+                        </select>
+                    </div>
                     <button type="button" onclick="priceWithDiscountCalculate()">
                         Calcular precio con Dcto
                     </button>
