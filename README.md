@@ -13,4 +13,11 @@ Talleres prácticos realizados en el curso de Platzi utilizando HTML5, CSS3 y Ja
 1. Defini la formula
 2. Implementar las formulas en JS
 3. Crear funciones
-4. Inaractuar con HTML y agregar estilos
+4. Interactuar con HTML y agregar estilos
+
+#Taller 3 Promedio, mediana y moda
+
+1. Defini la formula
+2. Implementar las formulas en JS
+3. Crear funciones para cada cálculo
+4. Interactuar con HTML y agregar estilos
