@@ -14,6 +14,8 @@
     <script src="./src/figures.js"></script>
     <script src="./src/discount.js"></script>
     <script src="./src/average.js"></script>
+    <script src="./src/median.js"></script>
+    <script src="./src/mode.js"></script>
     <header>
         <img src="./assets/logo.png" alt="logo-html-css-javascript">
         <h1>Talleres del curso Práctico de Javascript by Platzi</h1>
@@ -105,10 +107,19 @@
         </section>
         <section class="workshop3">
             <h2>Taller 3 - Promedio, mediana y moda</h2>
-            <section class="average">
-                <h3></h3>
-                <form class="average__form">
-                    
+            <section>
+                <h3>Realizar Cálculos</h3>
+                <form class="calculate">
+                    <label for="user-inputs">Ingrese sus datos</label>
+                    <input type="text" name="" id="user-inputs" placeholder="Ej: 5,70,11,...">
+                    <button class="averageButton">Promedio</button>
+                    <p id="resultAverage"></p>
+                    <button type="button" onclick="medianCalculate()">
+                        Calcular Mediana
+                    </button>
+                    <button type="button" onclick="modeCalculatee()">
+                        Calcular Moda
+                    </button>
                 </form>
             </section>
         </section>

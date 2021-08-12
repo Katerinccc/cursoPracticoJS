@@ -1,5 +1,5 @@
 
-function averageCalculate(list){
+function averageCalculateM(list){
     const sumList = list.reduce(
         function(acummValue = 0, newElement){
             return acummValue + newElement;
@@ -19,7 +19,7 @@ function medianCalculate (list) {
             index = sortedList.length / 2;
             let value1 = list[index - 1];
             let value2 = list[index];
-            const medianValue1and2 = averageCalculate([
+            const medianValue1and2 = averageCalculateM([
                 value1, value2,])
             return median = medianValue1and2;
         } else{
