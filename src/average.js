@@ -12,3 +12,5 @@ function averageCalculate(list){
     const averageList = sumList / list.length;
     return averageList;
 };
+
+
