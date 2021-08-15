@@ -13,9 +13,7 @@
 <body>
     <script src="./src/figures.js"></script>
     <script src="./src/discount.js"></script>
-    <script src="./src/average.js"></script>
-    <script src="./src/median.js"></script>
-    <script src="./src/mode.js"></script>
+    <script src="./src/calculations.js"></script>
     <header>
         <img src="./assets/logo.png" alt="logo-html-css-javascript">
         <h1>Talleres del curso Práctico de Javascript by Platzi</h1>
@@ -111,8 +109,10 @@
                 <h3>Realizar Cálculos</h3>
                 <form class="calculate">
                     <label for="user-inputs">Ingrese sus datos</label>
-                    <input type="text" name="" id="user-inputs" placeholder="Ej: 5,70,11,...">
-                    <button class="averageButton">Promedio</button>
+                    <input type="text" id="user-inputs" placeholder="Ej: 5,70,11,...">
+                    <button type="button" onclick="average()">
+                        Calcular Promedio
+                    </button>
                     <p id="resultAverage"></p>
                     <button type="button" onclick="medianCalculate()">
                         Calcular Mediana
