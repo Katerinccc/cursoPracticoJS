@@ -23,6 +23,8 @@ function datalist(datos){
 }
 
 
+
+
 // Promedio
 
 function averageCalculate(userList){
@@ -74,13 +76,13 @@ function median(){
     const datos = document.getElementById("user-inputs").value;
     let data = datalist(datos);
     const result = medianCalculate(data);
-    const resultP = document.getElementById("resultAverage");
-    resultP.innerText = "La mediana es: " + result.toFixed(2);
+    const resultP = document.getElementById("resultMedian");
+    resultP.innerText = "La mediana es: " + result.toFixed(0);
 }
 
 //Moda
 
-function modeCalculat(list){
+function modeCalculate(list){
     const listCount = {};
     list.map(
         function (element){
@@ -102,8 +104,10 @@ function modeCalculat(list){
 
 function mode(){
     const datos = document.getElementById("user-inputs").value;
-    let data = datalist(datos);
+    //let data = datalist(datos);
+    let data = datos.split(',');
+    console.log(data);
     const result = modeCalculate(data);
-    const resultP = document.getElementById("resultAverage");
+    const resultP = document.getElementById("resultMode");
     resultP.innerText = "La moda es: " + result.toFixed(0);
 }

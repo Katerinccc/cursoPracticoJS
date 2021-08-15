@@ -143,10 +143,11 @@ header img{
     margin-bottom: 10px;
 }
 
-.discount__form p , .calculations__form p{
+.discount__form p , .calculations__form p , .calculations__form p{
     font-size: 1.2rem;
-    margin-top: 10px;
+    justify-content: center;
     font-weight: 700;
+    margin: 5px;
 }
 
 .discount__form label , .calculations__form label{
