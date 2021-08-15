@@ -10,10 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap" rel="stylesheet">
 </head>
-<body>
-    <script src="./src/figures.js"></script>
-    <script src="./src/discount.js"></script>
-    <script src="./src/calculations.js"></script>
+<body onload="loadPage()">
     <header>
         <img src="./assets/logo.png" alt="logo-html-css-javascript">
         <h1>Talleres del curso Práctico de Javascript by Platzi</h1>
@@ -125,9 +122,29 @@
                 </form>
             </section>
         </section>
+        <section class="workshop4">
+            <h2>Talle 4 - Analisis Salarial</h2>
+            <section class="salary">
+                <h3>Analisis de salarios en Colombia</h3>
+                <form class="salary__form">
+                    <p>Esta es la muestra de salarios:</p>
+                    <div id="salaries"></div>
+                    <label for="">Calcular la mediana</label>
+                    <button type="button" onclick="medianS()">
+                        OK
+                    </button>
+                    <p id="resultSalary"></p>
+                </form>
+            </section>
+        </section>
     </main>
     <footer>
         <h3>Creado por Katerin Calderón</h3>
     </footer>
+    <script src="./src/figures.js"></script>
+    <script src="./src/discount.js"></script>
+    <script src="./src/calculations.js"></script>
+    <script src="./src/salary.js"></script>    
+    <script src="./src/analysis.js"></script> 
 </body>
 </html>

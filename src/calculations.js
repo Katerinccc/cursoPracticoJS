@@ -22,9 +22,6 @@ function datalist(datos){
     return userList
 }
 
-
-
-
 // Promedio
 
 function averageCalculate(userList){
@@ -44,8 +41,6 @@ function average(){
     const resultP = document.getElementById("resultAverage");
     resultP.innerText = "El  promedio es: " + result.toFixed(2);
 }
-
-
 
 //Mediana
 
