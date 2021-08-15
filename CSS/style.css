@@ -34,6 +34,11 @@ header{
     color: var(--purple);
 }
 
+header h1{
+    text-align: center;
+    justify-content: center;
+}
+
 header img{
     width: 80px;
     height: 80px;
