@@ -192,4 +192,8 @@ footer{
     height: 6rem;
     margin-top: auto;
     color: var(--purple);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
