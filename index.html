@@ -105,21 +105,23 @@
         </section>
         <section class="workshop3">
             <h2>Taller 3 - Promedio, mediana y moda</h2>
-            <section>
+            <section class="calculations">
                 <h3>Realizar Cálculos</h3>
-                <form class="calculate">
+                <form class="calculations__form">
                     <label for="user-inputs">Ingrese sus datos</label>
                     <input type="text" id="user-inputs" placeholder="Ej: 5,70,11,...">
                     <button type="button" onclick="average()">
                         Calcular Promedio
                     </button>
                     <p id="resultAverage"></p>
-                    <button type="button" onclick="medianCalculate()">
+                    <button type="button" onclick="median()">
                         Calcular Mediana
                     </button>
-                    <button type="button" onclick="modeCalculatee()">
+                    <p id="resultMedian"></p>
+                    <button type="button" onclick="mode()">
                         Calcular Moda
                     </button>
+                    <p id="resultMode"></p>
                 </form>
             </section>
         </section>

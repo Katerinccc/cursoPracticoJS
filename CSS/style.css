@@ -45,7 +45,7 @@ header img{
     margin-top: 10px;
 }
 
-.workshop1 , .workshop2{
+.workshop1 , .workshop2 , .workshop3{
     color: var(--purple);
     display: flex;
     justify-content: center;
@@ -54,13 +54,13 @@ header img{
     margin: 10px;
 }
 
-.workshop1 h2 , .workshop2 h2{
+.workshop1 h2 , .workshop2 h2 , .workshop3 h2{
     align-self: center;
     padding-bottom: 10px;
     font-size: 1.6rem;
 }
 
-.figures , .discount{
+.figures , .discount , .calculations{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -85,7 +85,7 @@ header img{
     font-weight: 800;
 }
 
-.figures__form button , .discount__form button{
+.figures__form button , .discount__form button , .calculations__form button{
     font-size: 1rem;
     width: 130px;
     background-color: var(--soft-purple);
@@ -95,7 +95,7 @@ header img{
     margin-bottom: 2px;
 }
 
-.figures__form input , .discount__form input{
+.figures__form input , .discount__form input , .calculations__form input{
     font-size: 1.2rem;
     width: 150px;
     margin: 5px 0 5px 0px;
@@ -128,14 +128,14 @@ header img{
     margin-right: 3px;
 }
 
-.discount__form{
+.discount__form , .calculations__form{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.1rem;
 }
 
-.discount h3{
+.discount h3 , .calculations h3{
     font-size: 1.3rem;
     font-weight: 700;
     align-self: center;
@@ -143,13 +143,13 @@ header img{
     margin-bottom: 10px;
 }
 
-.discount__form p{
+.discount__form p , .calculations__form p{
     font-size: 1.2rem;
     margin-top: 10px;
     font-weight: 700;
 }
 
-.discount__form label{
+.discount__form label , .calculations__form label{
     color: var(--soft-purple);
 }
 

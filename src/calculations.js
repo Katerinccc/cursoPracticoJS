@@ -1,5 +1,5 @@
 
-//Extraer datos del usuario y convertirlos a un array
+//Crear array con los datos ingresados por el usuario
 function datalist(datos){
     let inicio=0;
     let userList = [];
@@ -66,6 +66,44 @@ function medianCalculate (list) {
         }
     }
     else{
-        console.log("Debes ingresar una lista con valores")
+        return "Debes ingresar datos para evaluar"
     }
+}
+
+function median(){
+    const datos = document.getElementById("user-inputs").value;
+    let data = datalist(datos);
+    const result = medianCalculate(data);
+    const resultP = document.getElementById("resultAverage");
+    resultP.innerText = "La mediana es: " + result.toFixed(2);
+}
+
+//Moda
+
+function modeCalculat(list){
+    const listCount = {};
+    list.map(
+        function (element){
+            if (listCount[element]){
+                listCount[element] += 1; 
+            }else{
+                listCount[element] = 1;
+            }
+        }
+    )
+    const listArray = Object.entries(listCount).sort(
+        function (element1, element2){
+            return element1[1] - element2[1];
+        }
+    )
+    const mode = Number((listArray[listArray.length - 1])[0]);
+    return mode;
+}
+
+function mode(){
+    const datos = document.getElementById("user-inputs").value;
+    let data = datalist(datos);
+    const result = modeCalculate(data);
+    const resultP = document.getElementById("resultAverage");
+    resultP.innerText = "La moda es: " + result.toFixed(0);
 }
