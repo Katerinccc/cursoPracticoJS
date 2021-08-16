@@ -53,7 +53,6 @@ header img{
 .workshop1 , .workshop2 , .workshop3 , .workshop4{
     color: var(--purple);
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 10px;
     margin: 10px;
@@ -62,20 +61,25 @@ header img{
 .workshop1 h2 , .workshop2 h2 , .workshop3 h2 , .workshop4 h2{
     align-self: center;
     padding-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    max-width: 500px;
 }
 
 .figures , .discount , .calculations , .salary{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     padding: 10px;
     outline: 1px solid var(--purple);
     margin-bottom: 10px;
+    max-width: 500px;
 }
 .figures h3{
     align-self: center;
     padding-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .figures__form{
@@ -86,12 +90,12 @@ header img{
 
 .figures__form label{
     color: var(--blue);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
 .figures__form button , .discount__form button , .calculations__form button , .salary__form button{
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 130px;
     background-color: var(--soft-purple);
     color: white;
@@ -101,7 +105,7 @@ header img{
 }
 
 .figures__form input , .discount__form input , .calculations__form input{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 150px;
     margin: 5px 0 5px 0px;
     outline: none;
@@ -125,7 +129,7 @@ header img{
 }
 
 .label-triangle label{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .input-triangle input{
@@ -137,11 +141,11 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .discount h3 , .calculations h3 , .salary h3{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     align-self: center;
     color: var(--blue);
@@ -149,7 +153,7 @@ header img{
 }
 
 .discount__form p , .calculations__form p , .calculations__form p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     justify-content: center;
     font-weight: 700;
     margin: 5px;
@@ -167,7 +171,7 @@ header img{
 
 .discount__form--coupon select{
     margin-left: 5px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     border-color: var(--blue);
     color: var(--blue);
 }
@@ -178,7 +182,7 @@ header img{
 
 .salary__form div{
     color: var(--soft-purple);
-    background-color: rgb(232, 221, 243);
+    background-color: rgb(240, 235, 245);
     justify-content: center;
 }
 
@@ -188,12 +192,12 @@ header img{
 }
 
 footer{
-    outline: 1px solid #FFF5FD;
-    height: 6rem;
     margin-top: auto;
     color: var(--purple);
-    margin-left: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(204, 172, 236);
 }
